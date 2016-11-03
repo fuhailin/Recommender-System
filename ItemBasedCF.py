@@ -27,6 +27,9 @@ class UserBasedCF:
 
 ### 计算pearson相关度
 def sim_pearson(prefer, item1, item2):
+    ItemSimcount = dict()
+    for
+
     sim={}
     #查找都评价过两项的用户
     for user in prefer[item1]:
@@ -62,10 +65,10 @@ def topKMatches(prefer, person, userId, k=20, sim=sim_pearson):
     itemSet = []
     scores = []
     items = []
-    # 找出所有prefer中用户评价过的Item,存入userSet
-    for item in prefer:
-        if userId in prefer[item]:
-            itemSet.append(item)
+    # 找出所有prefer中用户评价过的Item,存入itemSet
+    for i in prefer:
+        if userId in prefer[i]:
+            itemSet.append(i)
     # 计算相似性
     scores = [(sim(prefer, person, other), other) for other in itemSet if other != person]
 
@@ -75,12 +78,12 @@ def topKMatches(prefer, person, userId, k=20, sim=sim_pearson):
 
     if len(scores) <= k:  # 如果小于k，只选择这些做推荐。
         for item in scores:
-            items.append(item[1])  # 提取每项的userId
+            items.append(item[1])  # 提取每项的itemId
         return items
     else:  # 如果>k,截取k个用户
         kscore = scores[0:k]
         for item in kscore:
-            items.append(item[1])  # 提取每项的userId
+            items.append(item[1])  # 提取每项的itemId
         return items  # 返回K个最相似用户的ID
 
 ### 计算项目的平均评分
@@ -102,21 +105,21 @@ def getRating(prefer1, userId, itemId, knumber=20, similarity=sim_pearson):
     items = topKMatches(prefer1, itemId, userId, k=knumber, sim=sim_pearson)
 
     # 获取itemId 的平均值
-    averageOfUser = getAverage(prefer1, itemId)
+    averageOfItem = getAverage(prefer1, itemId)
 
     # 计算每个项目的加权，预测
     for other in items:
-        sim = similarity(prefer1, userId, other)  # 计算比较其他用户的相似度
-        averageOther = getAverage(prefer1, other)  # 该用户的平均分
+        sim = similarity(prefer1, itemId, other)  # 计算比较其他项目的相似度
+        averageOther = getAverage(prefer1, other)  # 该项目的平均分
         # 累加
         simSums += abs(sim)  # 取绝对值
-        jiaquanAverage += (prefer1[other][itemId] - averageOther) * sim  # 累加，一些值为负
+        jiaquanAverage += (prefer1[other][userId] - averageOther) * sim  # 累加，一些值为负
 
     # simSums为0，即该项目尚未被其他用户评分，这里的处理方法：返回用户平均分
     if simSums == 0:
-        return averageOfUser
+        return averageOfItem
     else:
-        return (averageOfUser + jiaquanAverage / simSums)
+        return (averageOfItem + jiaquanAverage / simSums)
 
 
         ##==================================================================
@@ -139,7 +142,7 @@ def getAllUserRating(fileTrain='u1.base', fileTest='u1.test',k=20, similarity=si
     testdata = loadMovieLensTest(fileTest)  # 加载测试集
     inAllnum = 0
     records=[]
-    for itemid in testdata:  # test集中每个项目
+    for userid in testdata:  # test集中每个项目
         for item in testdata[userid]:  # 对于test集合中每一个项目用base数据集,CF预测评分
             rating = getRating(traindata, userid, item, k)  # 基于训练集预测用户评分(用户数目<=K)
             records.append([userid,item,testdata[userid][item],rating])
@@ -159,3 +162,4 @@ if __name__ == "__main__":
         rmse=getRMSE(r)
         mae=getMAE(r)
         print("%3d%19.3f%%%19.3f" % (k, rmse * 100, mae * 100))
+        print("%3d%19.3f%%%19.3f" % (k, rmse , mae ))

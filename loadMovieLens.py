@@ -15,10 +15,10 @@ import os
 #  参数fileName 代表某个训练集文件
 ##==================================
 def loadMovieLensTrain(fileName='u1.base'):
-    str1 = './ml-100k/'                         # 目录的相对地址
+    #str1 = './ml-100k/'                         # 目录的相对地址
     
     prefer = {}
-    for line in open(str1+fileName,'r'):       # 打开指定文件
+    for line in open(fileName,'r'):       # 打开指定文件
         (userid, movieid, rating,ts) = line.split('\t')     # 数据集中每行有4项
         prefer.setdefault(userid, {})      # 设置字典的默认格式,元素是user:{}字典
         prefer[userid][movieid] = float(rating)    
@@ -31,9 +31,9 @@ def loadMovieLensTrain(fileName='u1.base'):
 #  参数fileName 代表某个测试集文件,如u1.test
 ##==================================
 def loadMovieLensTest(fileName='u1.test'):
-    str1 = './ml-100k/'
+    #str1 = './ml-100k/'
     prefer = {}
-    for line in open(str1+fileName,'r'):    
+    for line in open(fileName,'r'):
         (userid, movieid, rating,ts) = line.split('\t')   #数据集中每行有4项
         prefer.setdefault(userid, {})    
         prefer[userid][movieid] = float(rating)   

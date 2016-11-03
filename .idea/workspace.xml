@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9df67fd5-4435-4f41-a8ca-ff61b9419823" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ItemBasedCF.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UserBasedCF.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loadMovieLens.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ml-100k/Back/u1.base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ml-100k/Back/u1.test" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ItemBasedCF.py" afterPath="$PROJECT_DIR$/ItemBasedCF.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UserBasedCF.py" afterPath="$PROJECT_DIR$/UserBasedCF.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loadMovieLens.py" afterPath="$PROJECT_DIR$/loadMovieLens.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml-100k/u1.base" afterPath="$PROJECT_DIR$/ml-100k/u1.base" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml-100k/u1.test" afterPath="$PROJECT_DIR$/ml-100k/u1.test" />
     </list>
     <ignored path="Recommender System.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,30 +23,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="ItemBasedCF.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/ItemBasedCF.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="323">
-                    <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-                    <folding>
-                      <element signature="e#357#368#0" expanded="true" />
-                      <element signature="e#555#630#0" expanded="false" />
-                      <element signature="e#2522#2665#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Recommender System" />
@@ -52,12 +32,32 @@
       <file leaf-file-name="UserBasedCF.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UserBasedCF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2470">
-              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="161" selection-end-column="63" />
+            <state relative-caret-position="380">
+              <caret line="193" column="23" selection-start-line="193" selection-start-column="23" selection-end-line="193" selection-end-column="23" />
               <folding>
-                <element signature="e#357#368#0" expanded="true" />
-                <element signature="e#574#649#0" expanded="false" />
+                <element signature="e#357#391#0" expanded="true" />
+                <element signature="e#5006#5304#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urllib.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python27/Lib/urllib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="1290" column="20" selection-start-line="1290" selection-start-column="20" selection-end-line="1290" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pydevd_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,10 +65,10 @@
       <file leaf-file-name="kNNIBCF.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Collaborative Filtering/kNNIBCF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="96">
               <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
               <folding>
-                <element signature="e#310#842#0" expanded="false" />
+                <element signature="e#84#97#0" expanded="true" />
                 <element signature="e#2492#2983#0" expanded="false" />
                 <element signature="e#3055#3504#0" expanded="false" />
                 <element signature="e#3578#4189#0" expanded="false" />
@@ -82,7 +82,7 @@
       <file leaf-file-name="kNNUBCF.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Collaborative Filtering/kNNUBCF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-342">
               <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
@@ -92,9 +92,25 @@
       <file leaf-file-name="loadMovieLens.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loadMovieLens.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="-190">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding>
+                <element signature="e#288#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemBasedCF.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ItemBasedCF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2670">
+              <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="53" />
+              <folding>
+                <element signature="e#357#368#0" expanded="true" />
+                <element signature="e#555#630#0" expanded="false" />
+                <element signature="e#2548#2691#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,17 +130,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/ItemBasedCF.py" />
         <option value="$PROJECT_DIR$/loadMovieLens.py" />
         <option value="$PROJECT_DIR$/UserBasedCF.py" />
-        <option value="$PROJECT_DIR$/ItemBasedCF.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -154,29 +170,12 @@
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Recommender System" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Recommender System" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Recommender System" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserBasedCF.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ItemBasedCF.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -335,8 +334,26 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="ItemBasedCF" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Recommender System" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ItemBasedCF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.UserBasedCF" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ItemBasedCF" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -356,27 +373,46 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121297605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.121297605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35909823" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5378486" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2190016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993559" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35192564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121297605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23638779" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -394,20 +430,86 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/UserBasedCF.py</url>
-          <line>153</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/UserBasedCF.py</url>
-          <line>156</line>
+          <line>218</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/UserBasedCF.py</url>
-          <line>136</line>
+          <line>167</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>158</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ItemBasedCF.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UserBasedCF.py</url>
+          <line>194</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UserBasedCF.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UserBasedCF.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UserBasedCF.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -417,8 +519,8 @@
         <state relative-caret-position="456">
           <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
-            <element signature="e#357#368#0" expanded="true" />
-            <element signature="e#574#649#0" expanded="false" />
+            <element signature="e#357#391#0" expanded="true" />
+            <element signature="e#5006#5304#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -430,7 +532,7 @@
           <folding>
             <element signature="e#357#368#0" expanded="true" />
             <element signature="e#555#630#0" expanded="false" />
-            <element signature="e#2522#2665#0" expanded="false" />
+            <element signature="e#2548#2691#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -440,7 +542,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#310#842#0" expanded="false" />
+            <element signature="e#84#97#0" expanded="true" />
             <element signature="e#2492#2983#0" expanded="false" />
             <element signature="e#3055#3504#0" expanded="false" />
             <element signature="e#3578#4189#0" expanded="false" />
@@ -462,7 +564,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#288#298#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -471,8 +575,8 @@
         <state relative-caret-position="456">
           <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
-            <element signature="e#357#368#0" expanded="true" />
-            <element signature="e#574#649#0" expanded="false" />
+            <element signature="e#357#391#0" expanded="true" />
+            <element signature="e#5006#5304#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -484,7 +588,7 @@
           <folding>
             <element signature="e#357#368#0" expanded="true" />
             <element signature="e#555#630#0" expanded="false" />
-            <element signature="e#2522#2665#0" expanded="false" />
+            <element signature="e#2548#2691#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -494,7 +598,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#310#842#0" expanded="false" />
+            <element signature="e#84#97#0" expanded="true" />
             <element signature="e#2492#2983#0" expanded="false" />
             <element signature="e#3055#3504#0" expanded="false" />
             <element signature="e#3578#4189#0" expanded="false" />
@@ -516,7 +620,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#288#298#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -525,8 +631,8 @@
         <state relative-caret-position="1805">
           <caret line="95" column="75" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="75" />
           <folding>
-            <element signature="e#357#368#0" expanded="true" />
-            <element signature="e#574#649#0" expanded="false" />
+            <element signature="e#357#391#0" expanded="true" />
+            <element signature="e#5006#5304#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -536,7 +642,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#310#842#0" expanded="false" />
+            <element signature="e#84#97#0" expanded="true" />
             <element signature="e#2492#2983#0" expanded="false" />
             <element signature="e#3055#3504#0" expanded="false" />
             <element signature="e#3578#4189#0" expanded="false" />
@@ -558,7 +664,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#288#298#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -567,8 +675,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#357#368#0" expanded="true" />
-            <element signature="e#574#649#0" expanded="false" />
+            <element signature="e#357#391#0" expanded="true" />
+            <element signature="e#5006#5304#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -577,32 +685,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadMovieLens.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Collaborative Filtering/kNNUBCF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#288#298#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Collaborative Filtering/kNNIBCF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="96">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding>
-            <element signature="e#310#842#0" expanded="false" />
+            <element signature="e#84#97#0" expanded="true" />
             <element signature="e#2492#2983#0" expanded="false" />
             <element signature="e#3055#3504#0" expanded="false" />
             <element signature="e#3578#4189#0" expanded="false" />
@@ -612,25 +706,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserBasedCF.py">
+    <entry file="file://$PROJECT_DIR$/../Collaborative Filtering/kNNUBCF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2470">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="161" selection-end-column="63" />
-          <folding>
-            <element signature="e#357#368#0" expanded="true" />
-            <element signature="e#574#649#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-342">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ItemBasedCF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="2670">
+          <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="53" />
           <folding>
             <element signature="e#357#368#0" expanded="true" />
             <element signature="e#555#630#0" expanded="false" />
-            <element signature="e#2522#2665#0" expanded="false" />
+            <element signature="e#2548#2691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loadMovieLens.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="e#288#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/urllib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="1290" column="20" selection-start-line="1290" selection-start-column="20" selection-end-line="1290" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserBasedCF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="193" column="23" selection-start-line="193" selection-start-column="23" selection-end-line="193" selection-end-column="23" />
+          <folding>
+            <element signature="e#357#391#0" expanded="true" />
+            <element signature="e#5006#5304#0" expanded="false" />
           </folding>
         </state>
       </provider>

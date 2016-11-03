@@ -8,11 +8,10 @@
 # E-mail:      hailinfufu@outlook.com
 # Created:     1-11-2016
 # --------------------------------------------------------
-import math
+import math, random, sys, datetime
 from math import sqrt
 from loadMovieLens import loadMovieLensTrain
 from loadMovieLens import loadMovieLensTest
-import numpy as np
 
 class UserBasedCF:
     def __init__(self, train=None, test=None):
@@ -25,6 +24,27 @@ class UserBasedCF:
         self.testfile = test or self.testfile
         self.traindata = loadMovieLensTrain(train)  # 加载训练集
         self.testdata = loadMovieLensTest(test)  # 加载测试集
+
+    def generate_dataset(self, filename, pivot=0.7):
+        ''' load rating data and split it to training set and test set '''
+        trainset_len = 0
+        testset_len = 0
+        for line in self.loadfile(filename):
+            user, movie, rating, _ = line.split('::')
+            # split the data by pivot
+            if (random.random() < pivot):
+                self.trainset.setdefault(user, {})
+                self.trainset[user][movie] = int(rating)
+                trainset_len += 1
+            else:
+                self.testset.setdefault(user, {})
+                self.testset[user][movie] = int(rating)
+                testset_len += 1
+        print >> sys.stderr, 'split training set and test set succ'
+        print >> sys.stderr, 'train set = %s' % trainset_len
+        print (self.trainset)
+        print >> sys.stderr, 'test set = %s' % testset_len
+        print (self.testset)
 
 ### 计算pearson相关度
 def sim_pearson(prefer, person1, person2):
@@ -134,9 +154,34 @@ def getMAE(records):
 ## 参数:fileTrain,fileTest 是训练文件和对应的测试文件，fileResult为结果文件
 ##     similarity是相似度度量方法，默认是皮尔森。
 ##==================================================================
-def getAllUserRating(fileTrain='u1.base', fileTest='u1.test',k=20, similarity=sim_pearson):
-    traindata = loadMovieLensTrain(fileTrain)  # 加载训练集
-    testdata = loadMovieLensTest(fileTest)  # 加载测试集
+
+def loadfile(filename):
+    ''' load a file, return a generator. '''
+    fp = open(filename, 'r')
+    for i, line in enumerate(fp):
+        yield line.strip('\r\n')
+#       if i % 100000 == 0:
+#            print >> sys.stderr, 'loading %s(%s)' % (filename, i)
+    fp.close()
+    #print >> sys.stderr, 'load %s succ' % filename
+
+def getAllUserRating(n=1,k=20, similarity=sim_pearson):
+    if(n==1):
+        traindata = loadMovieLensTrain('ml-100k/u1.base')  # 加载训练集
+        testdata = loadMovieLensTest('ml-100k/u1.test')  # 加载测试集
+    else:
+        pivot = 0.7
+        traindata={}
+        testdata={}
+        for line in loadfile('ml-1m/ratings.dat'):
+            user, movie, rating, _ = line.split('::')
+            # split the data by pivot
+            if (random.random() < pivot):
+                traindata.setdefault(user, {})
+                traindata[user][movie] = int(rating)
+            else:
+                testdata.setdefault(user, {})
+                testdata[user][movie] = int(rating)
     inAllnum = 0
     records=[]
     for userid in testdata:  # test集中每个用户
@@ -145,18 +190,35 @@ def getAllUserRating(fileTrain='u1.base', fileTest='u1.test',k=20, similarity=si
             records.append([userid,item,testdata[userid][item],rating])
             inAllnum = inAllnum + 1
     #np.savetxt("records.txt",records,fmt='%1.4e')
-    print("-------------Completed!!-----------", inAllnum)
+    #print("-------------Completed!!-----------", inAllnum)
+    SaveRecords(records)
     return records
 
+def SaveRecords(records):
+    file = open('records.txt', 'a')
+    file.write("%s\n" % ("------------------------------------------------------"))
+    for u, i, rui, pui in records:
+        file.write('%s\t%s\t%s\n' % (u, i, rui,pui))
+    file.close()
 
 ############    主程序   ##############
 if __name__ == "__main__":
+    trainfile = 'ml-100k/u1.base'
+    testfile = 'ml-100k/u1.test'
+    ratingfile = 'ml-1m/ratings.dat'
+    #usercf=UserBasedCF()
+    #usercf.generate_dataset()
     print("\n--------------基于MovieLens的推荐系统 运行中... -----------\n")
-    trainfile='u1.base'
-    testfile='u1.test'
-    print("%3s%20s%20s" % ('K', "RMSE","MAE"))
-    for k in [10, 25, 50, 75, 100, 125, 150]:
-        r=getAllUserRating(trainfile, testfile, k)
+    print ("请选择你要使用的数据集\n1:ml-100k\n2:ml-1m")
+    n=input("Your choose:")
+    if(n==1):
+        print ("即将进行的试验数据为ml-100k")
+    else:
+        print ("即将进行的试验数据为ml-1m")
+    starttime = datetime.datetime.now()
+    print("%3s%20s%20s%20s" % ('K', "RMSE","MAE","耗时"))
+    for k in [ 25, 50, 75, 100, 125, 150]:
+        r=getAllUserRating(n, k)
         rmse=getRMSE(r)
         mae=getMAE(r)
-        print("%3d%19.3f%%%19.3f" % (k, rmse * 100, mae * 100))
+        print("%3d%19.3f%%%19.3f%%%17ss" % (k, rmse * 100, mae * 100, (datetime.datetime.now() - starttime).seconds))
