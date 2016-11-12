@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # --------------------------------------------------------
-# Name:            UserBasedCF.py
-# Purpose:  基于已知的训练集，"测试集"中的user的item进行评分预测.
+# Name:        UserBasedCF.py
+# Purpose:     基于已知的训练集，"测试集"中的user的item进行评分预测.
 # Data:        MovieLens
 # Language:    Python 2.7
 # Author:      Hailin
