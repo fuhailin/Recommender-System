@@ -153,7 +153,7 @@ class PMF(object):
 
 
 if __name__ == "__main__":
-    file_path = "data/ml-100k/u.data"
+    file_path = "../Data/ml-100k/u.data"
     pmf = PMF()
     ratings = load_rating_data(file_path)
     print(len(np.unique(ratings[:, 0])), len(np.unique(ratings[:, 1])), pmf.num_feat)
